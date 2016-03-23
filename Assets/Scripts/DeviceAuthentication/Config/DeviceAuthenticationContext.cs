@@ -10,7 +10,7 @@ public class DeviceAuthenticationContext :  SignalContext{
 
   protected override void mapBindings()
   {
-    
+    //Binding DeviceAuthenticationMediator to DeviceAuthenticationView
     mediationBinder.Bind<DeviceAuthenticationView>().To<DeviceAuthenticationMediator>();
     commandBinder.Bind<ChangeUserNameSignal>().To<ChangeUserNameCommand>();
   }
